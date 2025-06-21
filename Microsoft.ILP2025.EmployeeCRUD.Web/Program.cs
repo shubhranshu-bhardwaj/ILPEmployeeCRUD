@@ -13,6 +13,9 @@ namespace Microsoft.ILP2025.EmployeeCRUD.Web
             builder.Services.AddScoped<IEmployeeService, EmployeeServcie>();
             builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 

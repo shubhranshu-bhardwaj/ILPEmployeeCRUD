@@ -1,0 +1,32 @@
+@model Microsoft.ILP2025.EmployeeCRUD.Entities.EmployeeEntity
+
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+<h1>Create New Employee</h1>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Departmet"></label>
+        <input asp-for="Departmet" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Designation"></label>
+        <input asp-for="Designation" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfJoing"></label>
+        <input asp-for="DateOfJoing" class="form-control" type="date" />
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
